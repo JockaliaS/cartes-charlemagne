@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Page introuvable — Charlemagne Groupe</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f7f1e8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500&display=swap">
+<style>
+  :root{
+    --cream:#f7f1e8;--copper:#b87b4d;--copper-dark:#95603a;
+    --copper-soft:rgba(184,123,77,.14);--ink:#2f2b26;--ink-soft:#6d635a;
+    --line:rgba(184,123,77,.24);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;min-height:100vh;display:grid;place-items:center;
+    font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    color:var(--ink);background-color:var(--cream);
+    background-image:
+      radial-gradient(circle at 18% 12%, rgba(255,255,255,.75), transparent 42%),
+      radial-gradient(circle at 84% 88%, var(--copper-soft), transparent 46%);
+    line-height:1.6;-webkit-font-smoothing:antialiased;
+  }
+  .box{max-width:420px;padding:40px 24px;text-align:center}
+  .eyebrow{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--copper-dark);font-weight:600;margin:0}
+  h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:2rem;line-height:1.2;margin:14px 0 10px}
+  p{margin:0 0 26px;color:var(--ink-soft)}
+  hr{width:56px;height:1px;background:var(--copper);opacity:.5;border:0;margin:0 auto 26px}
+  a.home{
+    display:inline-flex;align-items:center;min-height:48px;padding:12px 24px;
+    border-radius:999px;background:var(--copper);color:#fff;text-decoration:none;
+    font-weight:500;box-shadow:0 2px 10px rgba(184,123,77,.32);
+  }
+  a.home:hover{background:var(--copper-dark)}
+  a.home:focus-visible{outline:3px solid var(--copper-dark);outline-offset:3px}
+</style>
+</head>
+<body>
+<main class="box">
+  <p class="eyebrow">Charlemagne Groupe</p>
+  <h1>Cette page n’existe pas</h1>
+  <hr>
+  <p>Le lien est peut-être incomplet ou a changé. Retrouvez toutes nos cartes de visite depuis l’accueil.</p>
+  <a class="home" href="/">Voir toutes les cartes</a>
+</main>
+</body>
+</html>

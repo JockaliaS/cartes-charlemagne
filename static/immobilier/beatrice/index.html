@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Béatrice ZENARRE — Charlemagne Immobiliers</title>
+<meta name="description" content="Béatrice ZENARRE, conseillère immobilière en Guadeloupe — Charlemagne Immobiliers by KW. Estimation, vente, gestion locative.">
+<meta name="theme-color" content="#f7f1e8">
+
+<link rel="canonical" href="https://charlemagne-groupe.fr/immobilier/beatrice">
+
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Charlemagne Groupe">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Béatrice ZENARRE — Charlemagne Immobiliers">
+<meta property="og:description" content="Conseillère immobilière en Guadeloupe. Estimation, vente, gestion locative. Appelez-moi ou enregistrez mes coordonnées.">
+<meta property="og:url" content="https://charlemagne-groupe.fr/immobilier/beatrice">
+<meta property="og:image" content="https://charlemagne-groupe.fr/assets/immobilier/beatrice/carte-recto.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="750">
+<meta property="og:image:height" content="492">
+<meta property="og:image:alt" content="Carte de visite de Béatrice ZENARRE, Charlemagne Immobiliers by KW">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Béatrice ZENARRE — Charlemagne Immobiliers">
+<meta name="twitter:description" content="Conseillère immobilière en Guadeloupe. Estimation, vente, gestion locative.">
+<meta name="twitter:image" content="https://charlemagne-groupe.fr/assets/immobilier/beatrice/carte-recto.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap">
+
+<style>
+  :root{
+    --cream:#f7f1e8;
+    --cream-deep:#efe5d6;
+    --paper:#fffcf7;
+    --copper:#b87b4d;
+    --copper-dark:#95603a;
+    --copper-soft:rgba(184,123,77,.14);
+    --ink:#2f2b26;
+    --ink-soft:#6d635a;
+    --line:rgba(184,123,77,.24);
+    --radius:16px;
+    --shadow:0 1px 2px rgba(47,43,38,.05), 0 8px 28px rgba(47,43,38,.08);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    color:var(--ink);
+    background-color:var(--cream);
+    background-image:
+      radial-gradient(circle at 18% 12%, rgba(255,255,255,.75), transparent 42%),
+      radial-gradient(circle at 84% 88%, var(--copper-soft), transparent 46%);
+    background-attachment:fixed;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .page{
+    max-width:520px;
+    margin:0 auto;
+    padding:24px 20px calc(40px + env(safe-area-inset-bottom));
+  }
+
+  /* --- Visuel carte --- */
+  .card-visual{
+    position:relative;
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    background:var(--paper);
+    border:1px solid var(--line);
+    /* Ratio de la photo du recto (750 x 492) : la carte est cadrée
+       exactement, sans rognage du bas (téléphone et e-mail). */
+    aspect-ratio:750 / 492;
+  }
+  .card-visual img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+  .card-fallback{
+    display:none;
+    height:100%;
+    padding:26px 24px;
+    flex-direction:column;
+    justify-content:center;
+    gap:6px;
+    text-align:center;
+    background:linear-gradient(150deg,#fffdf9 0%,var(--cream) 55%,var(--cream-deep) 100%);
+  }
+  .card-visual.is-fallback img{display:none}
+  .card-visual.is-fallback .card-fallback{display:flex}
+  .card-fallback .fb-brand{
+    font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--copper-dark);font-weight:600;
+  }
+  .card-fallback .fb-name{
+    font-family:"Cormorant Garamond",Georgia,serif;
+    font-size:clamp(1.5rem,7vw,2rem);line-height:1.15;margin:4px 0 0;
+  }
+  .card-fallback .fb-role{font-size:.85rem;color:var(--ink-soft)}
+  .card-fallback .fb-rule{
+    display:block;width:56px;height:1px;background:var(--copper);opacity:.6;margin:10px auto;
+  }
+
+  /* --- Identité --- */
+  .identity{text-align:center;padding:28px 4px 4px}
+  .eyebrow{
+    font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--copper-dark);font-weight:600;margin:0;
+  }
+  h1{
+    font-family:"Cormorant Garamond",Georgia,serif;
+    font-weight:500;
+    font-size:clamp(2rem,9vw,2.75rem);
+    line-height:1.1;
+    margin:10px 0 6px;
+    letter-spacing:.01em;
+  }
+  h1 .surname{font-weight:600;letter-spacing:.04em}
+  .role{margin:0;font-size:1rem;color:var(--ink-soft)}
+  .rule{width:64px;height:1px;background:var(--copper);opacity:.5;border:0;margin:20px auto}
+  .services{
+    margin:0;padding:0;list-style:none;
+    display:flex;flex-wrap:wrap;justify-content:center;gap:8px;
+  }
+  .services li{
+    font-size:.8rem;letter-spacing:.04em;
+    padding:6px 14px;border-radius:999px;
+    background:rgba(255,255,255,.7);
+    border:1px solid var(--line);
+    color:var(--ink);
+  }
+
+  /* --- Actions --- */
+  .actions{display:grid;gap:12px;margin-top:30px}
+  .btn{
+    display:flex;align-items:center;gap:14px;
+    min-height:60px;padding:14px 18px;
+    border-radius:14px;
+    border:1px solid var(--line);
+    background:var(--paper);
+    color:var(--ink);
+    font:inherit;font-size:1rem;font-weight:500;
+    text-decoration:none;text-align:left;
+    box-shadow:0 1px 2px rgba(47,43,38,.05);
+    cursor:pointer;
+    transition:transform .12s ease, box-shadow .12s ease, background-color .12s ease;
+    width:100%;
+  }
+  .btn:hover{background:#fff;box-shadow:0 4px 14px rgba(47,43,38,.09)}
+  .btn:active{transform:translateY(1px)}
+  .btn:focus-visible{outline:3px solid var(--copper);outline-offset:3px}
+  .btn .ico{
+    flex:0 0 40px;height:40px;border-radius:11px;
+    display:grid;place-items:center;
+    background:var(--copper-soft);
+    color:var(--copper-dark);
+  }
+  .btn .ico svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .btn .txt{display:flex;flex-direction:column;min-width:0}
+  .btn .txt b{font-weight:600}
+  .btn .txt small{font-size:.8rem;color:var(--ink-soft);font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .btn--primary{
+    background:var(--copper);border-color:var(--copper-dark);color:#fff;
+    box-shadow:0 2px 10px rgba(184,123,77,.32);
+  }
+  .btn--primary:hover{background:var(--copper-dark)}
+  .btn--primary .ico{background:rgba(255,255,255,.2);color:#fff}
+  .btn--primary .txt small{color:rgba(255,255,255,.85)}
+
+  .share-row{margin-top:22px;display:flex;justify-content:center}
+  .btn-share{
+    display:inline-flex;align-items:center;gap:9px;
+    min-height:48px;padding:12px 22px;border-radius:999px;
+    background:transparent;border:1px solid var(--line);
+    color:var(--copper-dark);font:inherit;font-size:.92rem;font-weight:500;
+    cursor:pointer;transition:background-color .12s ease;
+  }
+  .btn-share:hover{background:rgba(255,255,255,.72)}
+  .btn-share:focus-visible{outline:3px solid var(--copper);outline-offset:3px}
+  .btn-share svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .btn-share[data-state="done"]{color:#1d6b4a;border-color:rgba(29,107,74,.4);background:rgba(29,107,74,.07)}
+
+  footer{margin-top:36px;text-align:center;font-size:.78rem;color:var(--ink-soft);line-height:1.7}
+  footer a{color:var(--copper-dark);text-decoration:none;border-bottom:1px solid var(--line)}
+  footer a:hover{color:var(--ink)}
+  .sr-only{
+    position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+  }
+
+  @media (min-width:720px){
+    .page{max-width:620px;padding-top:56px;padding-bottom:56px}
+    .actions{grid-template-columns:1fr 1fr}
+    .identity{padding-top:34px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .btn{transition:none}
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <div class="card-visual" id="cardVisual">
+    <img src="/assets/immobilier/beatrice/carte-recto.png"
+         alt="Carte de visite de Béatrice ZENARRE — Charlemagne Immobiliers by KW"
+         width="750" height="492" onerror="document.getElementById('cardVisual').classList.add('is-fallback')">
+    <div class="card-fallback" aria-hidden="true">
+      <p class="fb-brand">Charlemagne Immobiliers <span style="letter-spacing:normal;text-transform:none">by kw</span></p>
+      <p class="fb-name">Béatrice ZENARRE</p>
+      <span class="fb-rule"></span>
+      <p class="fb-role">Conseillère immobilière</p>
+    </div>
+  </div>
+
+  <header class="identity">
+    <p class="eyebrow">Charlemagne Immobiliers <span style="letter-spacing:normal;text-transform:none">by kw</span></p>
+    <h1>Béatrice <span class="surname">ZENARRE</span></h1>
+    <p class="role">Conseillère immobilière</p>
+    <hr class="rule">
+    <ul class="services">
+      <li>Estimation</li>
+      <li>Vente</li>
+      <li>Gestion locative</li>
+    </ul>
+  </header>
+
+  <nav class="actions" aria-label="Prendre contact avec Béatrice ZENARRE">
+
+    <a class="btn btn--primary" href="tel:+590691247185" aria-label="Appeler Béatrice ZENARRE au 06 91 24 71 85">
+      <span class="ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+      </span>
+      <span class="txt"><b>Appeler</b><small>06 91 24 71 85</small></span>
+    </a>
+
+    <a class="btn" href="https://wa.me/590691247185" target="_blank" rel="noopener"
+       aria-label="Écrire à Béatrice ZENARRE sur WhatsApp">
+      <span class="ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.3A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8.6 9c.2 1.6 1.1 3 2.4 4 1 .7 2 1.1 3.2 1.3l.9-1.3 1.7.8-.4 1.4c-1.9.4-3.9-.3-5.5-1.5-1.6-1.3-2.7-3.1-3-5l1.3-.6.9 1.6L8.6 9Z"/></svg>
+      </span>
+      <span class="txt"><b>WhatsApp</b><small>Envoyer un message</small></span>
+    </a>
+
+    <a class="btn" href="mailto:beatrice.zenarre@kwfrance.com"
+       aria-label="Envoyer un e-mail à beatrice.zenarre@kwfrance.com">
+      <span class="ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg>
+      </span>
+      <span class="txt"><b>Envoyer un e-mail</b><small>beatrice.zenarre@kwfrance.com</small></span>
+    </a>
+
+    <a class="btn" href="/immobilier/beatrice/beatrice.vcf" download="beatrice-zenarre.vcf" type="text/vcard"
+       aria-label="Enregistrer les coordonnées de Béatrice ZENARRE dans vos contacts">
+      <span class="ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 3v11"/><path d="m7.5 10 4.5 4 4.5-4"/><path d="M4 17v2.5A1.5 1.5 0 0 0 5.5 21h13a1.5 1.5 0 0 0 1.5-1.5V17"/></svg>
+      </span>
+      <span class="txt"><b>Enregistrer le contact</b><small>Ajouter à mon répertoire</small></span>
+    </a>
+
+  </nav>
+
+  <div class="share-row">
+    <button type="button" class="btn-share" id="shareBtn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="m8.4 10.8 7.2-4.1M8.4 13.2l7.2 4.1"/></svg>
+      <span id="shareLabel">Partager cette carte</span>
+    </button>
+  </div>
+  <p class="sr-only" role="status" aria-live="polite" id="shareStatus"></p>
+
+  <footer>
+    <p>Charlemagne Groupe — Guadeloupe<br>
+    <a href="/">Voir les autres cartes</a></p>
+  </footer>
+
+</main>
+
+<script>
+(function () {
+  var btn = document.getElementById('shareBtn');
+  var label = document.getElementById('shareLabel');
+  var status = document.getElementById('shareStatus');
+  var timer = null;
+
+  var payload = {
+    title: 'Béatrice ZENARRE — Charlemagne Immobiliers',
+    text: 'Béatrice ZENARRE, conseillère immobilière en Guadeloupe. Estimation, vente, gestion locative.',
+    url: window.location.href
+  };
+
+  function feedback(message, state) {
+    label.textContent = message;
+    status.textContent = message;
+    btn.setAttribute('data-state', state || 'done');
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      label.textContent = 'Partager cette carte';
+      btn.removeAttribute('data-state');
+      status.textContent = '';
+    }, 2600);
+  }
+
+  // Copie « à l'ancienne » : seule méthode disponible hors contexte sécurisé
+  // ou quand l'autorisation presse-papiers est refusée.
+  function legacyCopy() {
+    var field = document.createElement('textarea');
+    field.value = payload.url;
+    field.setAttribute('readonly', '');
+    field.style.position = 'fixed';
+    field.style.top = '0';
+    field.style.opacity = '0';
+    document.body.appendChild(field);
+    field.select();
+    field.setSelectionRange(0, field.value.length);
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(field);
+    return ok;
+  }
+
+  function copyDone(ok) {
+    if (ok) { feedback('Lien copié'); }
+    else { feedback('Copie impossible — copiez le lien depuis la barre d’adresse', 'info'); }
+  }
+
+  function copyFallback() {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(payload.url).then(
+        function () { copyDone(true); },
+        function () { copyDone(legacyCopy()); }   // 2e chance avant d'annoncer un échec
+      );
+      return;
+    }
+    copyDone(legacyCopy());
+  }
+
+  btn.addEventListener('click', function () {
+    if (navigator.share) {
+      navigator.share(payload).catch(function (err) {
+        if (err && err.name === 'AbortError') return;
+        copyFallback();
+      });
+      return;
+    }
+    copyFallback();
+  });
+})();
+</script>
+</body>
+</html>

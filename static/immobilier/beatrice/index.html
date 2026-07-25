@@ -107,6 +107,28 @@
     display:block;width:56px;height:1px;background:var(--copper);opacity:.6;margin:10px auto;
   }
 
+  /* --- Portrait (avatar circulaire) --- */
+  /* Chevauche le bas de la photo de carte pour un effet "profil" premium.
+     C'est un frère de .card-visual (pas un enfant) : le overflow:hidden de
+     la carte ne le rogne donc pas. S'il manque, il se masque tout seul
+     (onerror) et le reste de la page garde sa mise en page. */
+  .avatar{
+    width:120px;height:120px;
+    margin:-60px auto 0;
+    position:relative;z-index:2;
+    border-radius:50%;
+    padding:3px;
+    background:linear-gradient(145deg,#d29a6a 0%,var(--copper) 45%,var(--copper-dark) 100%);
+    box-shadow:0 10px 24px rgba(47,43,38,.22);
+  }
+  .avatar img{
+    display:block;width:100%;height:100%;
+    border-radius:50%;
+    object-fit:cover;object-position:50% 32%;
+    border:3px solid var(--paper);
+    background:var(--ink);
+  }
+
   /* --- Identité --- */
   .identity{text-align:center;padding:28px 4px 4px}
   .eyebrow{
@@ -217,6 +239,13 @@
       <span class="fb-rule"></span>
       <p class="fb-role">Conseillère immobilière</p>
     </div>
+  </div>
+
+  <div class="avatar">
+    <img src="/assets/immobilier/beatrice/portrait-square.jpg"
+         alt="Portrait de Béatrice ZENARRE"
+         width="320" height="320" loading="lazy"
+         onerror="this.closest('.avatar').style.display='none'">
   </div>
 
   <header class="identity">

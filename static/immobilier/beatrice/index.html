@@ -114,7 +114,9 @@
      (onerror) et le reste de la page garde sa mise en page. */
   .avatar{
     width:120px;height:120px;
-    margin:-60px auto 0;
+    /* Chevauchement limité à la marge crème sous l'e-mail de la carte :
+       au-delà de ~26px, l'avatar masque les lignes téléphone/e-mail. */
+    margin:-26px auto 0;
     position:relative;z-index:2;
     border-radius:50%;
     padding:3px;

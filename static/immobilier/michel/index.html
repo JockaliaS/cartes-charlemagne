@@ -15,10 +15,16 @@
 <meta property="og:title" content="Michel BOISSAT — Charlemagne Immobiliers">
 <meta property="og:description" content="Conseiller immobilier en Guadeloupe. Estimation, vente, gestion locative. Appelez-moi ou enregistrez mes coordonnées.">
 <meta property="og:url" content="https://immobilier.charlemagne-groupe.fr/michel">
+<meta property="og:image" content="https://immobilier.charlemagne-groupe.fr/assets/immobilier/michel/carte-recto.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1540">
+<meta property="og:image:height" content="1010">
+<meta property="og:image:alt" content="Carte de visite de Michel BOISSAT, Charlemagne Immobiliers">
 
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Michel BOISSAT — Charlemagne Immobiliers">
 <meta name="twitter:description" content="Conseiller immobilier en Guadeloupe. Estimation, vente, gestion locative.">
+<meta name="twitter:image" content="https://immobilier.charlemagne-groupe.fr/assets/immobilier/michel/carte-recto.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,8 +72,9 @@
     box-shadow:var(--shadow);
     background:var(--paper);
     border:1px solid var(--line);
-    /* Même ratio que les cartes physiques du groupe (1204 x 802). */
-    aspect-ratio:1204 / 802;
+    /* Ratio de la photo du recto (1540 x 1010) : la carte est cadrée
+       exactement, sans rognage du bas (téléphone et e-mail). */
+    aspect-ratio:1540 / 1010;
   }
   .card-visual img{
     display:block;
@@ -225,11 +232,11 @@
 <body>
 <main class="page">
 
-  <!-- Pas encore de photo du recto de la carte physique : le bloc de repli
-       sert de visuel. Quand la photo existera, remplacer is-fallback par
-       une balise <img> comme sur la carte de Béatrice. -->
-  <div class="card-visual is-fallback" id="cardVisual">
-    <div class="card-fallback">
+  <div class="card-visual" id="cardVisual">
+    <img src="/assets/immobilier/michel/carte-recto.jpg"
+         alt="Carte de visite de Michel BOISSAT — Charlemagne Immobiliers"
+         width="1540" height="1010" onerror="document.getElementById('cardVisual').classList.add('is-fallback')">
+    <div class="card-fallback" aria-hidden="true">
       <p class="fb-brand">Charlemagne Immobiliers</p>
       <p class="fb-name">Michel BOISSAT</p>
       <span class="fb-rule"></span>

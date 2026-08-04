@@ -15,16 +15,16 @@
 <meta property="og:title" content="Rosalie LORSOLD — Charlemagne Immobiliers">
 <meta property="og:description" content="Conseillère immobilière en Guadeloupe. Estimation, vente, gestion locative. Appelez-moi ou enregistrez mes coordonnées.">
 <meta property="og:url" content="https://immobilier.charlemagne-groupe.fr/rosalie">
-<meta property="og:image" content="https://immobilier.charlemagne-groupe.fr/assets/immobilier/rosalie/portrait-square.jpg">
+<meta property="og:image" content="https://immobilier.charlemagne-groupe.fr/assets/immobilier/rosalie/carte-recto.jpg">
 <meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="640">
-<meta property="og:image:height" content="640">
-<meta property="og:image:alt" content="Portrait de Rosalie LORSOLD, Charlemagne Immobiliers">
+<meta property="og:image:width" content="1438">
+<meta property="og:image:height" content="944">
+<meta property="og:image:alt" content="Carte de visite de Rosalie LORSOLD, Charlemagne Immobiliers">
 
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Rosalie LORSOLD — Charlemagne Immobiliers">
 <meta name="twitter:description" content="Conseillère immobilière en Guadeloupe. Estimation, vente, gestion locative.">
-<meta name="twitter:image" content="https://immobilier.charlemagne-groupe.fr/assets/immobilier/rosalie/portrait-square.jpg">
+<meta name="twitter:image" content="https://immobilier.charlemagne-groupe.fr/assets/immobilier/rosalie/carte-recto.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,8 +72,9 @@
     box-shadow:var(--shadow);
     background:var(--paper);
     border:1px solid var(--line);
-    /* Même ratio que les cartes physiques du groupe (1204 x 802). */
-    aspect-ratio:1204 / 802;
+    /* Ratio de la photo du recto (1438 x 944) : la carte est cadrée
+       exactement, sans rognage du bas (téléphone et e-mail). */
+    aspect-ratio:1438 / 944;
   }
   .card-visual img{
     display:block;
@@ -231,11 +232,11 @@
 <body>
 <main class="page">
 
-  <!-- Pas encore de photo du recto de la carte physique : le bloc de repli
-       sert de visuel. Quand la photo existera, remplacer is-fallback par
-       une balise <img> comme sur la carte de Béatrice. -->
-  <div class="card-visual is-fallback" id="cardVisual">
-    <div class="card-fallback">
+  <div class="card-visual" id="cardVisual">
+    <img src="/assets/immobilier/rosalie/carte-recto.jpg"
+         alt="Carte de visite de Rosalie LORSOLD — Charlemagne Immobiliers"
+         width="1438" height="944" onerror="document.getElementById('cardVisual').classList.add('is-fallback')">
+    <div class="card-fallback" aria-hidden="true">
       <p class="fb-brand">Charlemagne Immobiliers</p>
       <p class="fb-name">Rosalie LORSOLD</p>
       <span class="fb-rule"></span>
